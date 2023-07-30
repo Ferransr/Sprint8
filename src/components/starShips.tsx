@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 interface Starship {
   name: string;
@@ -29,8 +30,10 @@ const Starships: React.FC = () => {
       <ul>
         {starships.map((starship) => (
           <li key={starship.name}>
-            <strong>Name:</strong> {starship.name}, <strong>Model:</strong>
-            {starship.model}
+            <Link to={`/starships?name=${starship.name}`}>
+              <strong>Name:</strong> {starship.name}
+            </Link>
+            <strong>Model:</strong> {starship.model}
           </li>
         ))}
       </ul>
