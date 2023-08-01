@@ -2,14 +2,103 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
+  color: #e1e1e1;
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-image: url("./assets/img/bg-stars.jpeg");
+  display: grid;
+  place-items: center;
+  margin-top: 5em;
+}
+
+.loading {
+  font-size: 3em;
+  display: grid;
+  place-items: center;
+}
+
+/* Starships Home */
+
+.starships-container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.starship-item {
+  width: 250px;
+  background-color: #121212;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.starship-item:hover {
+  background-color: #002aff;
+}
+
+.starship-name {
+  color: #e1e1e1;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.starship-model {
+  color: #b2b2b2;
+}
+
+/* Starships Details */
+
+.starship-details-container {
+  background: #121212;
+  width: 30em;
+  height: 25em;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 0.2em solid #002aff;
+  border-radius: 0.4em;
+}
+
+.starship-details-main-title {
+  font-size: 2em;
+  font-weight: bolder;
+  text-align: center;
+  padding-top: 0.8em;
+  padding-bottom: 0.6em;
+  margin: 0;
+}
+
+.starship-image {
+  border-radius: 0.4em;
+  max-width: 30em;
+  border-bottom: 0.2em solid #002aff;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3em;
+  padding-bottom: 0.2em;
+}
+
+.starship-title-details {
+  color: #e1e1e1;
+  font-weight: bolder;
+  text-decoration: none;
+  margin-left: 4em;
+}
+
+.starship-title-details p {
+  margin: 0;
+}
+
+.starship-details {
+  color: #b2b2b2;
+  font-weight: normal;
+  text-decoration: none;
 }

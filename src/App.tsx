@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Starships from "./components/starships";
-import StarshipDetails from "./components/starshipDetails";
+import Starships from "./pages/starships";
+import StarshipDetails from "./pages/starshipDetails";
 
 const App: React.FC = () => {
   return (
