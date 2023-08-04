@@ -1,16 +1,16 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Starships from "./pages/starships";
-import StarshipDetails from "./pages/starshipDetails";
+import Starships from "./pages/Starships";
+import Home from "./pages/Home";
 
-const App: React.FC = () => {
+function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/starships" element={<StarshipDetails />} />
-        <Route path="/" element={<Starships />} />
+        <Route path="/" element={<Home />} />
+        <Route path='/starships' element={<Starships />} />
       </Routes>
     </Router>
-  );
-};
+  )
+}
 
 export default App;

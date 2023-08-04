@@ -1,9 +1,12 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  color: #e1e1e1;
-  color-scheme: light dark;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+
+  color: #9b9a9a;
+  background-color: #0a0b0b;
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -11,94 +14,203 @@
   -webkit-text-size-adjust: 100%;
 }
 
+a {
+  color: #a6a6a6;
+  text-decoration: inherit;
+  font-size: medium;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
 body {
+  display: flex;
   background-image: url("./assets/img/bg-stars.jpeg");
-  display: grid;
+  margin: 0;
+  min-width: 300px;
+  min-height: 100vh;
+  justify-content: center;
   place-items: center;
-  margin-top: 5em;
+
+}
+
+button {
+  border-radius: 0.5em;
+  background-color: transparent;
+  color: #a6a6a6;
+  font-size: 1em;
+  border: none;
+  padding: 1em 1em;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #f5f5f5;
+}
+
+/* ---------- NAVBAR ---------- */
+nav {
+  background-color: #0c0c0c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.navbarTop {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoButton {
+  padding: 0;
+}
+
+.logo {
+  width: 15em;
+  padding: 1.5em 0;
+}
+
+.logInSignUp {
+  position: absolute;
+  right: 0;
+  margin-right: 2em;
+  display: flex;
+}
+
+.logInSignUp button {
+  font-size: 1.50em;
+  font-weight: inherit;
+}
+
+.logInSignUp p {
+  font-size: 1.25em;
+}
+
+.divider p {
+  color: #353535;
+  font-weight: 800;
+  font-size: 40px;
+}
+
+.navbarMenu {
+  width: 100vw;
+  border-top: 2px solid #003cffb6;
+  border-bottom: 2px solid #f000008c;
+  display: flex;
+  justify-content: center;
+}
+
+.home-text {
+  font-size: 1.2em;
+  margin-right: 1em;
+}
+
+.starships-text {
+  font-size: 1.2em;
+}
+
+/* ---------- HOME ---------- */
+.homePage {
+  margin-top: 13%;
+}
+
+.welcomeGif {
+  width: 40vw;
+  border-radius: 20em;
+}
+
+/* ---------- STARSHIPS ---------- */
+
+.starships-container {
+  margin-top: 260px;
 }
 
 .loading {
-  font-size: 3em;
-  display: grid;
-  place-items: center;
+  font-size: 3.5em;
+  font-weight: 700;
+  color: #a6a6a6;
 }
 
-/* Starships Home */
-
-.starships-container {
-  display: grid;
-  place-items: center;
-  height: 100vh;
-}
-
-.starship-item {
-  width: 250px;
-  background-color: #121212;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 10px;
-}
-
-.starship-item:hover {
-  background-color: #002aff;
-}
-
-.starship-name {
-  color: #e1e1e1;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.starship-model {
-  color: #b2b2b2;
-}
-
-/* Starships Details */
-
-.starship-details-container {
-  background: #121212;
-  width: 30em;
-  height: 25em;
-  margin-left: auto;
-  margin-right: auto;
-  border-bottom: 0.2em solid #002aff;
-  border-radius: 0.4em;
-}
-
-.starship-details-main-title {
-  font-size: 2em;
-  font-weight: bolder;
+.loadingComplete {
+  font-weight: 400;
+  font-size: 1.5em;
+  margin-bottom: 1em;
   text-align: center;
-  padding-top: 0.8em;
-  padding-bottom: 0.6em;
+  color: #f5f5f5;
+}
+
+.starshipContainerCard {
+  background-color: #171717;
+  width: 50vw;
+  padding: 1em 2em;
+  margin: 1.50em 0;
+  cursor: pointer;
+  border-radius: 0.50em;
+}
+
+.starshipContainerCard:hover {
+  background-color: #0c0c0c;
+}
+
+.starshipName {
+  font-size: 1.5em;
+  margin-bottom: 0.20em;
+  font-weight: 700;
+}
+
+.starshipModel {
+  font-size: 1.2em;
+}
+
+/* ---------- STARSHIP DETAIL CARD ---------- */
+.starshipDetailCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5em;
+}
+
+.starshipImage {
+  width: 95%;
+}
+
+.starshipDetailCard ul {
+  list-style: none;
+  padding: 1em;
   margin: 0;
+  line-height: 2;
+  font-size: 1.25em;
 }
 
-.starship-image {
-  border-radius: 0.4em;
-  max-width: 30em;
-  border-bottom: 0.2em solid #002aff;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 3em;
-  padding-bottom: 0.2em;
+ul li {
+  border-bottom: 1px solid #4e4e4e;
+  width: 400px;
+  text-align: left;
+  padding: 5px;
 }
 
-.starship-title-details {
-  color: #e1e1e1;
-  font-weight: bolder;
-  text-decoration: none;
-  margin-left: 4em;
+.starshipDetails {
+  font-weight: 500;
 }
 
-.starship-title-details p {
-  margin: 0;
+@media (max-width: 700px) {
+  .logInSignUp {
+    display: none;
+  }
 }
 
-.starship-details {
-  color: #b2b2b2;
-  font-weight: normal;
-  text-decoration: none;
+@media (max-width: 1300px) {
+  .starshipDetailCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
