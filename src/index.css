@@ -200,6 +200,121 @@ ul li {
   font-weight: 500;
 }
 
+/* ---------- LOG IN ---------- */
+.logInFormDiv {
+  margin: 0 auto;
+  margin-top: 200px; /* Ajusté el margen superior */
+  padding: 20px;
+  background-color: #222; /* Fondo más oscuro */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Incrementé la sombra */
+  width: 300px;
+  text-align: center;
+  color: #fff;
+}
+
+.logInInputsDiv {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logInInputsDiv input {
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 100%;
+  background-color: #333; /* Fondo más oscuro */
+  border: 1px solid #111; /* Borde aún más oscuro */
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 1.2em; /* Texto un poco más grande */
+  color: #fff;
+}
+
+.logInInputsDiv button {
+  margin: 0;
+  margin-top: 15px;
+  padding: 12px 25px;
+  font-size: 1.3em; /* Texto un poco más grande */
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.logInInputsDiv button:hover {
+  background-color: #0056b3;
+}
+
+.googleLogo {
+  width: 35px; /* Aumenté aún más el tamaño del logo de Google */
+  margin-right: 10px;
+}
+
+/*---------logInForm-----------*/
+
+/* Estilos para el formulario de registro */
+.logInFormDiv {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #171717;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.logInInputsDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.usernameInputDiv,
+.passwordInputDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="email"],
+input[type="password"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Estilos para los mensajes de éxito y error */
+.success-message,
+.error-message {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.success-message {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+.error-message {
+  background-color: #8d1500;
+  color: #eeeeee;
+}
+
+
 @media (max-width: 700px) {
   .logInSignUp {
     display: none;
